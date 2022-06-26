@@ -5,24 +5,226 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhon Michael Portfolio</title>
-    <style>
-        body {
-            background-color: black;
-            display: flex;
-            height: calc(100vh - 1px);
-            justify-content: center;
-            align-items: center;
-        }
 
-        h1 {
-            color: #fff;
-        }
-    </style>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Jhon Michael Manik | Frontend Web Learner</title>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1>👋Hi, I'm Jhon Michael</h1>
+    <!-- Scroll Top -->
+    <a href="#home" class="scroll-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+    <!-- Header -->
+    <header id="navbar">
+        <nav class="container">
+            <a href="#" class="logo">Jhon</a>
+            <!-- Navbar -->
+            <ul class="navbar">
+                <li>
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- Menu Icon -->
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home container" id="home">
+        <div class="home-content">
+            <div class="home-img">
+                <img src="./assets/img/profile.png" alt="Profile">
+            </div>
+            <div class="home-text" id="welcome-section">
+                <h2>Hello</h2>
+                <h1>I'm <span class="color">Jhon</span> </h1>
+                <p>Final year computer science student with deep interest in Software Engineering especially frontend
+                    web development. <br>
+                    Here's a bit more about me.
+                </p>
+                <!-- Social -->
+                <div class="social">
+                    <a href="https://github.com/jhonmicc" target="_blank" id="profile-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://twitter.com/stilllearncode" target="_blank" id="profile-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://www.instagram.com/jhonmicc/" target="_blank" id="profile-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about container" id="about">
+        <!-- Heading -->
+        <h2 class="heading">About</h2>
+        <!-- About Content -->
+        <div class="about-content">
+            <div class="about-data">
+                <span>About Me</span>
+                <h2>Frontend Web Development Learner</h2>
+            </div>
+            <div class="about-text">
+                <p>Hello! I am Jhon Michael. Computer Science student at Brawijaya University. Currently studying
+                    frontend web development especially ReactJS. Having
+                    prior experience working on software development.
+                </p>
+                <p>Get your project book with contact button.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects container" id="projects">
+        <h2 class="project-title">Projects</h2>
+
+        <!-- Project Content -->
+        <div class="project-content">
+            <!-- #1 -->
+            <div class="portfolio-box">
+                <img src="./assets/img/portfolio-1.png" alt="" class="portfolio-img">
+                <!-- Overlay -->
+                <div class="project-overlay">
+                    <h2>
+                        Web Designing
+                    </h2>
+                    <a href="#">
+                        <i class="bx bx-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- #2 -->
+            <div class="portfolio-box">
+                <img src="./assets/img/portfolio-2.png" alt="" class="portfolio-img">
+                <!-- Overlay -->
+                <div class="project-overlay">
+                    <h2>
+                        Web Designing
+                    </h2>
+                    <a href="#">
+                        <i class="bx bx-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- #3 -->
+            <div class="portfolio-box">
+                <img src="./assets/img/portfolio-3.png" alt="" class="portfolio-img">
+                <!-- Overlay -->
+                <div class="project-overlay">
+                    <h2>
+                        Web Designing
+                    </h2>
+                    <a href="#">
+                        <i class="bx bx-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- #4 -->
+            <div class="portfolio-box">
+                <img src="./assets/img/portfolio-4.png" alt="" class="portfolio-img">
+                <!-- Overlay -->
+                <div class="project-overlay">
+                    <h2>
+                        Web Designing
+                    </h2>
+                    <a href="#">
+                        <i class="bx bx-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- #5 -->
+            <div class="portfolio-box">
+                <img src="./assets/img/portfolio-5.png" alt="" class="portfolio-img">
+                <!-- Overlay -->
+                <div class="project-overlay">
+                    <h2>
+                        Web Designing
+                    </h2>
+                    <a href="#" class="project-tile">
+                        <i class="bx bx-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+
+    <!-- Contact -->
+    <section class="contact container" id="contact">
+        <!-- Heading -->
+        <h2 class="heading">Contact</h2>
+        <!-- Contact Form -->
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Your Name..." class="name" required>
+            <input type="email" name="" id="" placeholder="Your Email..." class="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." class="message"
+                required></textarea>
+            <input type="submit" value="Send" class="send-btn">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+        <div class="social">
+            <a href="mailto:jhonmichaelmanik@gmail.com" target="_blank" id="profile-link">
+                <i class='bx bx-envelope'></i>
+            </a>
+            <a href="https://github.com/jhonmicc" target="_blank" id="profile-link">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://twitter.com/stilllearncode" target="_blank" id="profile-link">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://www.instagram.com/jhonmicc/" target="_blank" id="profile-link">
+                <i class='bx bxl-instagram'></i>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <p>Jhon Michael Manik &#169; 2022 </p>
+    </footer>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <!-- Sweet Alert JS -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("E4dbgKO7gUb6t4RMU");
+        })();
+    </script>
+
+    <!-- JS -->
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>
