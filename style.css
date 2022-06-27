@@ -369,6 +369,15 @@ nav {
     transition: .3s all linear;
 }
 
+/* Tools */
+.tools-content {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: .5rem;
+}
+
 /* Footer */
 footer {
     display: flex;
